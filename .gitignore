@@ -1,0 +1,36 @@
+# Build-Ausgabe (inkl. heruntergeladener Abhängigkeiten wie Crow und SQLiteCpp)
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Datenbank mit den echten Codes und Ergebnissen: nie ins Repository
+kletter.db
+kletter.db-journal
+kletter.db-wal
+kletter.db-shm
+*.db
+*.sqlite
+*.sqlite3
+
+# Geheimnisse und lokale Konfiguration (falls später ein Admin-Passwort o. ä. dazukommt)
+.env
+*.env
+config.local.*
+secrets.*
+
+# Sicherungen und Logs
+*.log
+*.bak
+*.sql.bak
+
+# Editor und System
+.vscode/
+.idea/
+.cache/
+*.swp
+*~
+.DS_Store
+Thumbs.db
